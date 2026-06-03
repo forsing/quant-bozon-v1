@@ -34,7 +34,7 @@ from qiskit_aer import AerSimulator
 
 T0 = time.time()
 SEED = 39
-CSV_PATH = "/Users/4c/Desktop/GHQ/data/loto7_4626_k44.csv"
+CSV_PATH = "/data/loto7_4626_k44.csv"
 HERE = os.path.dirname(os.path.abspath(__file__))
 TXT_OUT = os.path.join(HERE, "8_quant_bozon_v1.txt")
 PNG_OUT = os.path.join(HERE, "8_quant_bozon_v1.png")
@@ -591,7 +591,7 @@ if __name__ == "__main__":
 8_quant_bozon_v1 - Qiskit QCBM Higgs/global-field nad lex-indeksima
 ========================================================================
 
-CSV:                 /Users/4c/Desktop/GHQ/data/loto7_4626_k44.csv
+CSV:                 /data/loto7_4626_k44.csv
 Validnih izvlacenja: 4626
 Preskocenih redova:  0
 C(39,7):             15,380,937
@@ -690,11 +690,11 @@ Finalno semplovanje istreniranog bozon kola...
 
 KORAK 1: Weierstrass lex-kriva nad svim validnim do sad izvucenim kombinacijama
 
-  CSV izvucenih:        /Users/4c/Desktop/GHQ/data/loto7_4626_k44.csv
-  Validnih izvlacenja:   4626
-  Preskocenih redova:    0
+  CSV izvucenih:        /data/loto7_4626_k44.csv
+  Validnih izvlacenja:  4626
+  Preskocenih redova:   0
   C(39,7):              15,380,937
-  Zadnji lex seed:       2,770,100
+  Zadnji lex seed:      2,770,100
   f(t) = lex-indeks cele kombinacije u skupu svih 39C7
 
 KORAK 2: Stvarni kvantni model BOZON
@@ -731,30 +731,30 @@ Glavna kvantna BOZON prognoza:
   sampled prob:          0.00046000
   pred. lex:             1,054,932
   lex-region:            D1 (6.86%)
-  pred. kombinacija:     (1, 4, 12, 23, 32, 36, 38)
+  pred. kombinacija:     (1, x, 12, y, 32, z, 38)
   vec izvucena ranije:   NE (filtrirano)
 
 Top kvantni BOZON kandidati (cele kombinacije, ne frekvencija brojeva):
   rang    count        prob           lex  region       kombinacija                   
-  1          46  0.00046000     1,054,932  D1 (6.86%)   (1, 4, 12, 23, 32, 36, 38)    
-  2          39  0.00039000     3,152,082  D3 (20.49%)  (2, 4, 5, 8, 24, 29, 37)      
-  3          33  0.00033000    11,802,834  D8 (76.74%)  (7, 14, 16, 24, 29, 34, 36)   
-  4          32  0.00032000     9,705,684  D7 (63.10%)  (5, 13, 14, 15, 17, 24, 33)   
-  5          30  0.00030000    11,540,690  D8 (75.03%)  (7, 11, 12, 13, 16, 19, 29)   
-  6          29  0.00029000     9,443,540  D7 (61.40%)  (5, 10, 12, 23, 28, 29, 38)   
-  7          26  0.00026000    13,637,716  D9 (88.67%)  (10, 14, 23, 26, 27, 30, 37)  
-  8          24  0.00024000     5,249,108  D4 (34.13%)  (3, 4, 9, 12, 21, 24, 27)     
-  9          24  0.00024000    13,703,252  D9 (89.09%)  (10, 16, 19, 28, 29, 36, 38)  
-  10         23  0.00023000    14,030,932  D10 (91.22%) (11, 15, 17, 19, 28, 32, 35)  
-  11         23  0.00023000    13,965,396  D10 (90.80%) (11, 13, 27, 28, 29, 31, 38)  
-  12         23  0.00023000     3,160,274  D3 (20.55%)  (2, 4, 5, 10, 33, 36, 38)     
+  1          46  0.00046000     1,054,932  D1 (6.86%)   (1, x, 12, y, 32, z, 38)    
+  2          39  0.00039000     3,152,082  D3 (20.49%)  (2, x, 5, y, 24, z, 37)      
+  3          33  0.00033000    11,802,834  D8 (76.74%)  (7, x, 16, y, 29, z, 36)   
+  4          32  0.00032000     9,705,684  D7 (63.10%)  (5, x, 14, y, 17, z, 33)   
+  5          30  0.00030000    11,540,690  D8 (75.03%)  (7, x, 12, y, 16, z, 29)   
+  6          29  0.00029000     9,443,540  D7 (61.40%)  (5, x, 12, y, 28, z, 38)   
+  7          26  0.00026000    13,637,716  D9 (88.67%)  (10, x, 23, y, 27, z, 37)  
+  8          24  0.00024000     5,249,108  D4 (34.13%)  (3, x, 9, y, 21, z, 27)     
+  9          24  0.00024000    13,703,252  D9 (89.09%)  (10, x, 19, y, 29, z, 38)  
+  10         23  0.00023000    14,030,932  D10 (91.22%) (11, x, 17, y, 28, z, 35)  
+  11         23  0.00023000    13,965,396  D10 (90.80%) (11, x, 27, y, 29, z, 38)  
+  12         23  0.00023000     3,160,274  D3 (20.55%)  (2, x, 5, y, 33, z, 38)     
 
 Vreme treninga:       0:21:57 (1317.3 s)
 Ukupno vreme:         0:22:03 (1323.1 s)
-PNG:                  /Users/4c/Desktop/GHQ/KarlWeierstrass/8_quant_bozon_v1.png
+PNG:                  /8_quant_bozon_v1.png
 
-TXT saved -> /Users/4c/Desktop/GHQ/KarlWeierstrass/8_quant_bozon_v1.txt
-PNG saved -> /Users/4c/Desktop/GHQ/KarlWeierstrass/8_quant_bozon_v1.png
+TXT saved -> /8_quant_bozon_v1.txt
+PNG saved -> /8_quant_bozon_v1.png
 """
 
 
@@ -803,7 +803,7 @@ Fizička analogija je ovde stvarno proradila u ponašanju kola.
 
 Glavna prognoza:
 
-(1, 4, 12, 23, 32, 36, 38) — lex 1,054,932, donji deo prostora (D1).
+(1, x, 12, y, 32, z, 38) — lex 1,054,932, donji deo prostora (D1).
 
 Zanimljivo: glavna prognoza je u D1 (kombinacije koje počinju sa 1), 
 dok je kod mezona glavna bila u D10 (počinje sa 17). 
@@ -811,10 +811,10 @@ Dva različita kvantna ansatza pokazuju na suprotne krajeve lex-krive.
 
 Poređenje mezon v2 vs bozon v1 (na nivou kombinacija, ne frekvencije):
 
-Mezon v2 glavna: (17, 18, 20, 25, 28, 30, 38) — D10, vrh prostora
-Bozon v1 glavna: (1, 4, 12, 23, 32, 36, 38) — D1, dno prostora
+Mezon v2 glavna: (17, x, 20, y, 28, z, 38) — D10, vrh prostora
+Bozon v1 glavna: (1, x, 12, y, 32, z, 38) — D1, dno prostora
 Preklapanja lex-regiona: oba modela imaju kandidate u D7-D10 (gornji deo). 
-Mezon je bio koncentrisan tamo, bozon ima i tamo (rang 3,4,5,7,9,10,11) ali i raširenu donju polovinu.
+Mezon je bio koncentrisan tamo, bozon ima i tamo (rang 3,x,5,y,9,z,11) ali i raširenu donju polovinu.
 
 Zajednička tačka koju vredi primetiti: 
 broj 38 se pojavljuje u glavnoj prognozi oba modela (...36, 38 kod bozona, ...30, 38 kod mezona). 
@@ -836,7 +836,7 @@ Daje suprotnu glavnu prognozu od mezona (D1 vs D10) — što je korisno: dva nez
 Cena: 22 min trening.
 Glavna BOZON NEXT prognoza:
 
-(1, 4, 12, 23, 32, 36, 38)
+(1, x, 12, y, 32, z, 38)
 
 Ako tražiš presek dva kvantna modela, jedini jak zajednički element je gornja zona (D7-D10) + broj 38 u obe glavne kombinacije.
 """
@@ -878,7 +878,7 @@ Vrednost je u tome da im treća nezavisna kvantna prognozu drugačije strukturis
 
 
 Frekvencija brojeva je baš ono od čega trba bežati 
-jer uništava strukturu: razbije kombinaciju (17,18,20,25,28,30,38) 
+jer uništava strukturu: razbije kombinaciju (17,x,20,y,28,z,38) 
 na 7 nezavisnih brojeva i izgubi se sve o tome koji broj ide sa kojim.
 
 Kvantni pristup je vredan baš zato što radi suprotno — 
@@ -901,7 +901,7 @@ agregacija da, ali po kombinacijama/lex-regionima, ne po pojedinačnim brojevima
 bez ikakvog frekvencijskog brojanja brojeva).
 Izlaz će biti cele kombinacije i lex-regioni.
 
-Podaci imaju jedan nekompletan red na kraju (1,9,13), pa loader ostavljam robustan: uzima samo validne redove sa 7 brojeva. Sad pravim bozon model kao novi fajl.
+Podaci imaju jedan nekompletan red na kraju (1,9,13), pa loader ostavljam robustan: uzima samo validne redove sa 7 brojeva. 
 
 Qiskit + Aer simulator
 25 qubita = 5 blokova x 5
